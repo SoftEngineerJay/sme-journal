@@ -44,4 +44,11 @@ public class ApplicationController {
     public String getPartner(){
         return "views/modules/partners/index";
     }
+
+
+    @GetMapping(value = "/partners-create")
+    public String getPartnerCreate(){
+        return "views/modules/partners/create";
+    }
+
 }
