@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+<head>
+    <include th:replace="views/components/metas :: metas"></include>
+    <include th:replace="views/components/styles :: styles"></include>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+    <!-- navbar -->
+    <include th:replace="views/components/navbar :: navbar"></include>
+    <!-- sidebar -->
+    <include th:replace="views/components/sidebar :: sidebar"></include>
+
+
+    <!-- content wrapper -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <a href="/add-product" class="btn bg-purple"><i class="fas fa-plus-square"></i> Add Partner</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Partner</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content Header (Page header) -->
+
+        <!-- start main section content -->
+        <section>
+            <div class="container-fluid">
+                <div class="card card-outline card-lightblue">
+                    <div class="card-header">
+                        <h5><i class="fa fa-plus"></i> Partner Information</h5>
+                    </div>
+
+                    <form enctype="multipart/form-data" method="post">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Company Name:</label>
+                                                <input type="text" class="form-control" placeholder="Company Name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Company Webpage:</label>
+                                                <input type="text" class="form-control" placeholder="Company Webpage" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Number Of Employees:</label>
+                                                <input type="text" class="form-control" placeholder="Number of Employees" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Number Of Customers:</label>
+                                                <input type="text" class="form-control" placeholder="Number of Customers" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Company Address:</label>
+                                                <input type="text" class="form-control" placeholder="Company Address" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Street Address:</label>
+                                                <input type="text" class="form-control" placeholder="Street Address" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Street Address Line 2:</label>
+                                                <input type="text" class="form-control" placeholder="Street Address Line 2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">State / Province :</label>
+                                                <input type="text" class="form-control" placeholder="State / Province" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">City :</label>
+                                                <input type="text" class="form-control" placeholder="Street Address Line 2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Postal Zipcode :</label>
+                                                <input type="text" class="form-control" placeholder="Street Address Line 2" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn bg-purple">
+                                <i class="fa fa-save"></i> Submit
+                            </button>
+                            <a href="/partners" class="btn btn-outline-danger btn-rounded">
+                                <i class="fa fa-times"></i> Close
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!--end main section content-->
+
+    </div>
+    <!--end content wrapper-->
+
+
+</div>
+
+</body>
+</html>
